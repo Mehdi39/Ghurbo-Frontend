@@ -13,7 +13,7 @@ const Home = () => {
     useEffect(() => {
         document.title = "Ghurbo: Home";
           
-        const uri = 'http://localhost:5000/allpackage'
+        const uri = 'https://limitless-mesa-73949.herokuapp.com/allpackage'
         fetch(uri)
             .then(res => res.json())
             .then(data => setPackages(data))

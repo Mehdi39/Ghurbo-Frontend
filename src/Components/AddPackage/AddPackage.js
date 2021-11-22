@@ -11,7 +11,7 @@ const AddPackage = () => {
 
   const onSubmit = data => {
 
-    axios.post('http://localhost:5000/addpackage', data)
+    axios.post('https://limitless-mesa-73949.herokuapp.com/addpackage', data)
       .then(res => {
         if (res.data.insertedId) {
           alert('Data Added Successfully')

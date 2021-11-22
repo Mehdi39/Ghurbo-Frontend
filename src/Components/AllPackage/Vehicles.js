@@ -6,7 +6,7 @@ const Vehicles = () => {
     const [vehicles, setVehicles] = useState([]);
 
     useEffect( () => {
-        const uri = 'http://localhost:5000/allcar'
+        const uri = 'https://limitless-mesa-73949.herokuapp.com/allcar'
         fetch(uri)
             .then(res => res.json())
             .then(data => setVehicles(data))

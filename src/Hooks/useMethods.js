@@ -13,7 +13,7 @@ const useMethods = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         fetch(
-          `http://localhost:5000/cancelOrder?pdID=${id}`,
+          `https://limitless-mesa-73949.herokuapp.com/cancelOrder?pdID=${id}`,
           {
             method: "DELETE",
           }

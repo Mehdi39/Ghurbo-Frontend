@@ -18,7 +18,7 @@ const Booking = () => {
 
     useEffect(() => {
         
-        fetch(`http://localhost:5000/allpackage/${id}`)
+        fetch(`https://limitless-mesa-73949.herokuapp.com/allpackage/${id}`)
             .then((res) => res.json())
             .then((data) => setOrders(data));
     }, [id]);

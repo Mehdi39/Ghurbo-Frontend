@@ -13,7 +13,7 @@ const MyOrders = () => {
 
     useEffect(() => {
             document.title = "My Orders";
-        const uri = `http://localhost:5000/booking?email=${user.email}`
+        const uri = `https://limitless-mesa-73949.herokuapp.com/booking?email=${user.email}`
 
         fetch(uri)
             .then(res => res.json())

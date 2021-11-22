@@ -13,7 +13,7 @@ const ManageOrders = () => {
   useEffect(() => {
       document.title = "Manage Order";
 
-    fetch(`http://localhost:5000/manageOrders`)
+    fetch(`https://limitless-mesa-73949.herokuapp.com/manageOrders`)
       .then((res) => res.json())
       .then((data) => setAllMyOrders(data));
   }, [user.email, updateUI]);
@@ -101,8 +101,8 @@ const ManageOrders = () => {
                         <button>Approve</button>
                       </div>
                     ) : (
-                      <div className="flex space-x-3 items-center bg-green-700 cursor-not-allowed text-white px-4 py-1 rounded-full text-base hover:shadow-md">
-                        <button className="cursor-not-allowed">Approved</button>
+                      <div>
+                        {/* <button className="cursor-not-allowed">Approved</button> */}
                       </div>
                     )}
                   </div>
